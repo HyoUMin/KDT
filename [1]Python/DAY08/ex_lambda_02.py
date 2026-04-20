@@ -88,6 +88,8 @@ print(result)   # ['kiwi', 'apple', 'grape', 'banana']
 ## --------------------
 data = {"a": 3, "b": 1, "c": 2}
 result = sorted(data.items(), key=lambda item: item[1])
+# data.items() -> 튜플 형태의 리스트로 변환 [("a": 3), ("b": 1), ("c": 2)]
+# item[0]은 ("a": 3)에서 "a", item[1]은 ("a": 3)에서 3을 가리킴.
 print(result)   # [('b', 1), ('c', 2), ('a', 3)]
 
 ## --------------------
